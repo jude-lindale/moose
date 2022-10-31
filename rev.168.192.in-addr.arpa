@@ -1,0 +1,13 @@
+@ IN SOA dns . mfsnetwork . lan . root . mfsnetwork . lan . (
+                2016032900 ; serial number YYYYMMDDSS
+                28800
+                604800
+                604800
+                86400
+)
+168.192. in - addr . arpa . IN NS dns . mfsnetwork . lan .
+1.1 IN PTR mfsmaster01 . mfsnetwork . lan .
+2.1 IN PTR mfsmaster02 . mfsnetwork . lan .
+101.1 IN PTR chunkserver1 . mfsnetwork . lan .
+102.1 IN PTR chunkserver2 . mfsnetwork . lan .
+103.1 IN PTR chunkserver3 . mfsnetwork . lan .
