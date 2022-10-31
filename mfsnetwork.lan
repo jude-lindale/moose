@@ -1,0 +1,19 @@
+$TTL 3600
+$ORIGIN mfsnetwork . lan .
+@   IN  SOA dns . mfsnetwork . lan . root . mfsnetwork . lan . (
+                2016032900 ; serial number YYYMMDDSS
+                10800 ; refresh
+                3600 ; retry
+                604800 ; expire
+                10800 ; negative TTL
+)
+@               IN NS dns . mfsnetwork . lan .
+@               IN A 192.168.0.1 ; address of bind9
+dns             IN A 192.168.0.1 ; address of bind9
+mfsmaster       IN A 192.168.1.1 ; address of Master01
+mfsmaster       IN A 192.168.1.2 ; address of Master02
+mfsmaster01     IN A 192.168.1.1 ; address of Master01
+mfsmaster02     IN A 192.168.1.2 ; address of Master02
+chunkserver01   IN A 192.168.1.101 ; address of Chunkserver01
+chunkserver02   IN A 192.168.1.102 ; address of Chunkserver02
+chunkserver03   IN A 192.168.1.103 ; address of Chunkserver03
